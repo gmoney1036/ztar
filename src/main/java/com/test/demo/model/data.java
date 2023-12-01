@@ -6,9 +6,6 @@ import javax.persistence.*;
 @Entity
 public class data {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     private String mdn;
     private String product;
     private String voice;
@@ -25,9 +22,6 @@ public class data {
 
     // Getters and setters
 
-    public Long getId() {
-        return id;
-    }
 
     public String getMdn() {
         return mdn;
